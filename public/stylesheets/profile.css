@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#box{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+}
+
+#left{
+    width: 25%;
+    height: 100%;
+    background-color: #ffff;
+    padding: 10px 60px;
+    position: relative;
+}
+
+.icon{
+    font-size: 30px;
+    color: #1A91DA;
+}
+
+.icons{
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.icons i{
+    margin-right: 20px;
+    font-weight: 500;
+    color: #000;
+}
+
+
+.icons a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+}
+
+.home a{
+   color: #1A91DA;
+}
+.home i{
+    color: #1A91DA;
+}
+
+button{
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    color: #ffff;
+    font-size: 18px;
+    margin-top: 15px;
+    background-color: #1A91DA;
+}
+
+#prfl{
+    width: 240px;
+    height: 8%;
+    /* background-color: rgb(146, 57, 57); */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 5%;
+}
+
+.pic{
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    /* background-color: red; */
+    background-image: url(https://images.unsplash.com/photo-1594030546818-b2636c8501dd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1412&q=80);
+    background-position: center;
+}
+
+.dets{
+     width: 60%;
+     height: 100%;
+     /* background-color: bisque; */
+     font-size: 15px;
+}
+
+.more{
+    width: 10%;
+    /* height: 100%;
+    background-color: aqua; */
+    padding-top: 7px;
+}
+
+#center{
+    width: 45%;
+    height: 100%;
+    /* background-color: rgb(167, 113, 113); */
+} 
+
+.home2{
+    width: 100%;
+    height: 50px;
+    /* background-color: cadetblue; */
+    border-bottom: 1px solid rgba(135, 132, 132, 0.811);
+    display: flex;
+    align-items: center;
+    color: #000;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.home2 i{
+    color: #6fc2f5;
+}
+
+
+.hapn{
+    width: 100%;
+    height: 130px;
+    /* background-color: burlywood; */
+    border-bottom: 13px solid #F7F9FA;
+}
+
+.top{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+}
+.top .pic{
+    margin-right: 20px;
+}
+
+.btm{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    padding:  0 30px;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding-bottom: 10px;
+    /* background-color: blueviolet; */
+}
+
+.btm #btn{
+    width: 15%;
+    height: 40px;
+    background-color: #8ED0F9;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btm i{
+   font-size: 20px;
+   margin-top: 10px;
+   margin-right: 15px;
+   color: #8ED0F9;
+}
+
+form{
+    width: 100%;
+   height: 72.5%;
+    /* background-color: red; */
+}
+
+form #txt{
+   width: 100%;
+   height: 20%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: rgb(254, 254, 254);
+    box-shadow: 0px 3px 20px 2px  rgba(216, 215, 215, 0.455);
+    display: inline-block;
+  }
+  
+  h5{
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: rgba(34, 192, 195, 0.489);
+    color: #111;
+  }
+  
+  textarea{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 83%;
+    font-size: 15px;
+    padding: 10px;
+    resize: none;
+    outline: none;
+    color: #111;
+    border-radius: 5px rgba(34, 192, 195, 0.489);
+    border-color:#e3e3e3;
+  }
+
+  #card #btn{
+      position: absolute;
+      bottom: 12%;
+      left: 75%;
+      width: 20%;
+  }
+
+
+#right{
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+    overflow: auto;
+    flex-wrap: nowrap;
+    /* background-color: #ce0e0e; */
+}
+
+
+.boxes{
+    margin-bottom: 40px;
+}
+
+
+#right h3{
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: rgba(34, 192, 195, 0.489);
+  color: #333;
+}
+
+#right .boxes{
+    overflow: auto;
+ min-height: 80px;
+ position: relative;
+ border-radius: 5px;
+ background-color: #e3e3e341;
+ padding: 10px;
+}
+
+
+.boxes p{
+    margin-top: 5px;
+}
+
+#right .icons{
+    display: flex;
+    position: absolute;
+    bottom: -20%;
+    right: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#right .icons i{
+  color: #1A91DA;
+}
+
+
+
+
+
+

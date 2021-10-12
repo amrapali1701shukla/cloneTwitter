@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,body{
+    width: 100%;
+    height: 100%;
+  }
+ 
+  #box{
+      width: 100%;
+      height: 100%;
+      background-color: rgb(206, 206, 206);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  #card{
+      width: 45%;
+      /* height: 90%; */
+      border-radius: 10px;
+      background-color: #fff;
+      display: flexbox;
+      padding: 20px 60px;
+  }
+   #card h1{
+       color: #1DA1F2;
+       font-weight: 500
+   }
+
+  .icon{
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    color: #00B1FA;
+    margin: 0 auto;
+  }
+  
+  .icon i { 
+    text-shadow: 2px 4px 6px rgba(193, 193, 193, 0.687); 
+  } 
+
+  input{
+      width: 100%;
+     height: 50px;
+     margin-bottom: 25px;
+     padding: 20px;
+     outline-color: #1DA1F2 ;
+     border-radius: 5px;
+     border-color: rgba(210, 209, 209, 0.171);
+     font-size: 17px;
+  }
+  
+  input[type="submit"]{
+      background-color: #1DA1F2;
+      color: #fff;
+      padding: 0px;
+      font-size: 20px;
+  }
+
+  a{
+      text-decoration: none;
+      font-size: 20px;
+      color: #1DA1F2;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+  }
+
+  #edit{
+    width: 100%;
+    height: 200px;
+    padding: 10px 10px;
+    font-size: 15px;
+    resize: none;
+    outline: none;
+    margin-bottom: 20px;
+  }

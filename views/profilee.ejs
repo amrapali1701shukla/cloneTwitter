@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/profile.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        <div id="left">
+         <div class="icon"><i class="ri-twitter-fill"> </i></div><br>
+         <div class="icons" ><div class="home">
+             <i class="ri-home-7-line"></i></i>
+             <a href="">Home </a>
+             </div>
+            </div>
+            <div class="icons">
+              <i class="ri-hashtag"></i>
+              <a href="">Explorer</a>
+              </div>
+              <div class="icons">
+             <i class="ri-notification-3-line"></i>
+              <a href="">Notification</a>
+              </div>
+              <div class="icons">
+                <i class="ri-chat-2-line"></i>
+                <a href="">Message</a>
+                </div>
+                <div class="icons">
+                 <i class="ri-bookmark-line"></i>
+                 <a href="">Bookmarks</a>
+                 </div>
+                 <div class="icons">
+                   <i class="ri-file-list-line"></i>
+                  <a href="">Lists</a>
+                  </div>
+                  <div class="icons">
+                    <i class="ri-account-circle-line"></i>
+                   <a href="">Profile</a>
+                   </div>
+                   <div class="icons">
+                    <i class="ri-more-fill"></i>
+                    <a href="">More</a>
+                    </div>    
+              <!-- <button>Tweet</button> -->
+               <div id="prfl">
+                   <div class="pic"></div>
+                   <div class="dets">
+                       <h3>Amrapali shukla</h3>
+                       <h4>@Amrapali_shukla</h4>
+                   </div>
+                   <div class="more">
+                    <i class="ri-more-fill"></i>
+                   </div>
+               </div>
+        </div>
+        <div id="center">
+            <div class="home2">
+                <h4>Home</h4>
+                <i class="ri-star-fill"></i>
+            </div>
+                  <div class="hapn">
+                      <div class="top">
+                    <div class="pic"></div>
+                    <h4>What's Happening ?</h4>
+                    </div>
+                    <div class="btm">
+                        <i class="ri-image-line"></i>
+                        <i class="ri-gift-line"></i> 
+                        <i class="ri-chat-poll-line"></i>
+                        <i class="ri-emotion-line"></i>
+                        <i class="ri-calendar-line"></i>
+                        <!-- <button id="btn">Tweet</button> -->
+                    </div>
+                  </div>
+                   
+                  <form action="/tweet" method="POST">
+                    <div id="card">
+                      <textarea name="post" placeholder="Write your tweet here"></textarea>
+                      <button id="btn" type="submit" >Tweet</button>
+                    </div>
+                </form>
+
+            <!-- <form id="form"  action="/tweet" method="post">
+                <input type="text" name="tweets">
+                <input type="submit" value="tweet">
+                </form> -->
+
+        </div>
+        <div id="right">
+            <h3>Here you can see all tweets</h3> 
+            <% tweets.forEach(function(tweets){%>
+              <div class="boxes">
+                  <p><%= tweets.tweets %></p>
+                  <!-- <p id="usr">By - @Amrapali_shukla</p> -->
+                  <div class="icons">
+                     <a href=<%= '/like/' + tweets._id %>><i class="ri-heart-add-line"><%= tweets.likes.length %></i></a>
+                     <!-- <a href=<%= '/edit/' + tweets._id %>></i></a><i class="ri-pencil-line"></i> -->
+                    <a href=<%='/edit/' +tweets._id %>><i class="ri-pencil-line"></i></a>
+                    </div>
+              </div> 
+          <%})%>
+
+            </div>
+        </div>
+    </div>   
+</body>
+</html>
